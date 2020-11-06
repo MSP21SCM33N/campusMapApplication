@@ -19,6 +19,20 @@ export class AppComponent implements OnInit{
   kaplanLat: number;
   kaplanLng: number;
 
+  wishLat: number;
+  wishLng: number;
+
+  siegLat: number;
+  siegLng: number;
+
+  crownLat: number;
+  crownLng: number;
+
+  styles = [{
+    elementType: 'labels.icon',
+    stylers: [{visibility: 'off'}]
+  }];
+
   markers: any;
 
   constructor() {}
@@ -29,6 +43,18 @@ export class AppComponent implements OnInit{
 
     this.kaplanLat = 41.836929;
     this.kaplanLng = -87.628891;
+
+    this.msvLat = 41.835529;
+    this.msvLng = -87.624321;
+
+    this.wishLat = 41.835390;
+    this.wishLng = -87.627730;
+
+    this.siegLat = 41.834650;
+    this.siegLng = -87.627720;
+
+    this.crownLat = 41.833569;
+    this.crownLng = -87.626808;
 
   }
 }

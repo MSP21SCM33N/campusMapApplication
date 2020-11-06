@@ -1,29 +1,58 @@
 <div *ngIf="lat && lng">
-  <agm-map [zoom]="17" [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="{
+  <agm-map [zoom]="17" [latitude]="lat" [styles]=styles [longitude]="lng">
+    <agm-marker [latitude]="crownLat" [longitude]="crownLng" [iconUrl]="{
       url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Map_pin_icon_green.svg/352px-Map_pin_icon_green.svg.png',
       scaledSize: {
-          width: 25,
-          height: 32
+          width: 40,
+          height: 52
       }
   }">
       <agm-info-window>
-        <h3><strong>MTCC</strong></h3>
-        <p>Nice!!!!!</p>
+        <h3><strong>Crown Hall</strong></h3>
+        <p><strong>Test:</strong> Negative For Lead Contamination</p>
+        <p><strong>Date Tested:</strong> October 25, 2020 </p>
       </agm-info-window>
     </agm-marker>
 
-    <agm-marker [latitude]="kaplanLat" [longitude]="kaplanLng" [iconUrl]="{
+    <agm-marker [latitude]="siegLat" [longitude]="siegLng" [iconUrl]="{
       url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Map_pin_icon_green.svg/352px-Map_pin_icon_green.svg.png',
       scaledSize: {
-          width: 25,
-          height: 32
+          width: 40,
+          height: 52
       }
   }">
       <agm-info-window>
-        <h3><strong>Kaplan Institute</strong></h3>
-        <p>Tested</p>
-        <p>Found no Lead in the Water.</p>
+        <h3><strong>Siegal Hall</strong></h3>
+        <p><strong>Test:</strong> Negative For Lead Contamination</p>
+        <p><strong>Date Tested:</strong> October 25, 2020 </p>
+      </agm-info-window>
+    </agm-marker>
+
+    <agm-marker [latitude]="msvLat" [longitude]="msvLng" [iconUrl]="{
+      url: 'https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/67-512.png',
+      scaledSize: {
+          width: 82,
+          height: 82
+      }
+  }">
+      <agm-info-window>
+        <h3><strong>McCormick Student Village</strong></h3>
+        <p><strong>Test:</strong> Positive For Lead Contamination</p>
+        <p><strong>Date Tested:</strong> October 25, 2020 </p>
+      </agm-info-window>
+    </agm-marker>
+
+    <agm-marker [latitude]="wishLat" [longitude]="wishLng" [iconUrl]="{
+      url: 'https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/67-512.png',
+      scaledSize: {
+          width: 82,
+          height: 82
+      }
+  }">
+      <agm-info-window>
+        <h3><strong>Wishnick Hall</strong></h3>
+        <p><strong>Test:</strong> Positive For Lead Contamination</p>
+        <p><strong>Date Tested:</strong> October 25, 2020 </p>
       </agm-info-window>
     </agm-marker>
 
